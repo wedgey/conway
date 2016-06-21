@@ -104,7 +104,7 @@ ensure
 end
 
 board = Conway.new(nb_cols,nb_lines)
-while TRUE
+while true do
 	board.instance_variable_get(:@current_state).each_with_index do |row, y|
 		row.each_with_index do |state, x|
 			Curses.setpos(y,x)
